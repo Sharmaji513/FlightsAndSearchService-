@@ -9,7 +9,7 @@ const setupAndStartServer = async () => {
   app.use(express.json());
   app.use(express.urlencoded({ extended: true }));
 
-  app.listen(PORT, () => {
+  app.listen(PORT, async() => {
     console.log(`server started at ${PORT}`);
   });
   
